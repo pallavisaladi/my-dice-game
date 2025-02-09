@@ -74,8 +74,6 @@ const Gameplay = ({
       <img
         src={getDiceImage(diceValue, buttonValue)}
         alt="rolldiceimage"
-        height="250px"
-        width="250px"
         onClick={rollDice}
       />
       <p className="rolledDiceText">Click on Dice to roll</p>

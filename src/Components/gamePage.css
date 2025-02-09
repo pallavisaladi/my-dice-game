@@ -11,6 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .scoreContainer {
@@ -20,6 +26,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+
+  @media (max-width: 700px) {
+    flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
 }
 
 .score {
@@ -29,6 +42,12 @@
   margin: 0px;
   vertical-align: bottom;
   text-align: center;
+
+  @media (max-width: 700px) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .scoreText {
@@ -37,6 +56,10 @@
   text-align: center;
   font-weight: 500;
   font-size: 24px;
+
+  @media (max-width: 700px) {
+    font-size: 16px;
+  }
 }
 
 .buttonContainer {
@@ -45,11 +68,24 @@
   align-items: flex-end;
   gap: 20px;
   margin-top: 5px;
+
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0px;
+  }
 }
 
 .buttonItems {
   display: flex;
   gap: 10px;
+
+  @media (max-width: 700px) {
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 .numberButton {
@@ -60,6 +96,11 @@
   background-color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  @media (max-width: 700px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .numberButton:hover {
@@ -74,6 +115,11 @@
 .innerTextClass {
   font-size: 24px;
   font-weight: 700;
+
+  @media (max-width: 700px) {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 .SelectNumbertext {
@@ -81,6 +127,11 @@
   font-size: 24px;
   margin: 0px;
   line-height: 36px;
+
+  @media (max-width: 700px) {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 .rolledDiceImage {
@@ -91,6 +142,13 @@
 
 .rolledDiceImage img {
   cursor: pointer;
+  height: 250px;
+  width: 250px;
+
+  @media (max-width: 700px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .rolledDiceText {
@@ -99,6 +157,10 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 }
 
 .rolledDiceContainer {
@@ -118,6 +180,11 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    width: 200px;
+    height: 40px;
+  }
 }
 
 .resetButton:hover {
@@ -135,12 +202,28 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    width: 200px;
+    height: 40px;
+  }
 }
 
 .gameRulesButton:hover {
   background-color: white;
   color: black;
   transition: background-color 0.3s ease;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .gameRulesButton:hover {
+    color: white;
+    background-color: black;
+  }
+  .resetButton:hover {
+    color: black;
+    background-color: white;
+  }
 }
 
 .errorText {
@@ -153,6 +236,12 @@
   color: red;
   font-size: 24px;
   font-weight: 400;
+
+  @media (max-width: 700px) {
+    font-size: 16px;
+    font-weight: 500;
+    top: -45px;
+  }
 }
 
 .selectedButton {
