@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-dice-game/static/css/main.64f12f3a.css",
-    "main.js": "/my-dice-game/static/js/main.142909b0.js",
+    "main.js": "/my-dice-game/static/js/main.9019587f.js",
     "static/media/dices.png": "/my-dice-game/static/media/dices.dd209eaf1218f8d4fda3.png",
     "static/media/dice_6.png": "/my-dice-game/static/media/dice_6.6104664d856f0f10cfbc.png",
     "static/media/dice_5.png": "/my-dice-game/static/media/dice_5.10a549d914f4c6e380cd.png",
@@ -9,13 +9,12 @@
     "static/media/dice_3.png": "/my-dice-game/static/media/dice_3.e0b0f657546d70aa4a25.png",
     "static/media/dice_2.png": "/my-dice-game/static/media/dice_2.078a8c75a55e5be352bc.png",
     "static/media/dice_1.png": "/my-dice-game/static/media/dice_1.988b89e3409995d4536b.png",
-    "static/media/logo.svg": "/my-dice-game/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-dice-game/index.html",
     "main.64f12f3a.css.map": "/my-dice-game/static/css/main.64f12f3a.css.map",
-    "main.142909b0.js.map": "/my-dice-game/static/js/main.142909b0.js.map"
+    "main.9019587f.js.map": "/my-dice-game/static/js/main.9019587f.js.map"
   },
   "entrypoints": [
     "static/css/main.64f12f3a.css",
-    "static/js/main.142909b0.js"
+    "static/js/main.9019587f.js"
   ]
 }
