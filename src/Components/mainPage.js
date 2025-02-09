@@ -1,4 +1,4 @@
-import dices from "../Images/dices.png";
+import dices from "../images/dices.png";
 import "./mainPage.css";
 
 const Mainpage = ({ gamePlay, setGamePlay }) => {
@@ -9,7 +9,7 @@ const Mainpage = ({ gamePlay, setGamePlay }) => {
     <div className="mainContainer">
       <div className="middlecontainer">
         <div className="imagecontainer">
-          <img src={dices} alt="Dice image" width="100%" />
+          <img src={dices} alt="Dice" width="100%" />
         </div>
         <div className="nameContainer">
           <p className="text">DICE GAME</p>

@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import dice1 from "../Images/dice_1.png";
-import dice2 from "../Images/dice_2.png";
-import dice3 from "../Images/dice_3.png";
-import dice4 from "../Images/dice_4.png";
-import dice5 from "../Images/dice_5.png";
-import dice6 from "../Images/dice_6.png";
+import { useState } from "react";
+import dice1 from "../images/dice_1.png";
+import dice2 from "../images/dice_2.png";
+import dice3 from "../images/dice_3.png";
+import dice4 from "../images/dice_4.png";
+import dice5 from "../images/dice_5.png";
+import dice6 from "../images/dice_6.png";
 import "./gamePage.css";
 import Button from "./button";
 import Rules from "./rules";
@@ -19,15 +19,13 @@ const Gameplay = ({
   setShowError,
 }) => {
   const [showRulesCard, setShowRulesCard] = useState(false);
-  const [diceImage, setDiceImage] = useState(dice1);
   const resetScore = () => {
     setScore(0);
     setButtonValue(null);
     setDiceValue(0);
-    setDiceImage(dice1);
   };
   const getDiceImage = (diceValue, buttonValue) => {
-    if (buttonValue == null) {
+    if (buttonValue === null) {
       return dice1;
     }
     switch (diceValue) {
@@ -53,11 +51,11 @@ const Gameplay = ({
   const rollDice = () => {
     let randomDiceValue = getRandomNumber();
     console.log(randomDiceValue, buttonValue);
-    if (randomDiceValue != 0 && buttonValue != null) {
+    if (randomDiceValue !== 0 && buttonValue !== null) {
       setDiceValue(randomDiceValue);
-      if (randomDiceValue == buttonValue) {
+      if (randomDiceValue === buttonValue) {
         setScore((score) => {
-          return score + diceValue;
+          return score + randomDiceValue;
         });
       } else {
         setScore((score) => {
